@@ -11,11 +11,17 @@ Todo el proceso de análisis descriptivo, procesamiento y modelado se puede real
 
 # Despliegue de modelo en FastAPI
 
-1. Situarse en la carpeta despliegue_FastAPI
+1. Clonar el repositorio: 
+
+```sh
+git clone https://github.com/EdFlo15/FastAPI_Wines.git
+```
+
+2. Situarse en la carpeta despliegue_FastAPI
 ```sh
 cd despliegue_FastAPI
 ```
-2. Crear dentro de la carpeta despliegue_FastAPI el ambiente virtual con la version 3.8.10 de python y activarlo.
+3. Crear dentro de la carpeta despliegue_FastAPI el ambiente virtual con la version 3.8.10 de python y activarlo.
 
 En Windows ejecutar y activar:
 ```sh
@@ -28,19 +34,19 @@ En linux ejecutar y activar:
 python3 -m venv venv
 source bin/activate
 ```
-3. Instalar las librerias necesarias
+4. Instalar las librerias necesarias
 ```sh
 pip install -r requirements.txt
 ```
-4. Lanzar la aplicación: 
+5. Lanzar la aplicación: 
 ```sh
 uvicorn main:app --reload
 ```
 
-5. Probar la aplicación en local por el puerto 8000
+6. Probar la aplicación en local por el puerto 8000
 ```sh
 http://localhost:8000/docs
 
 ```
-5. Descargar el archivo de pruebas de la carpeta  FastAPI_Wines/despliegue_FastAPI/uploads/ y cargar a la API.
+7. Descargar el archivo de pruebas de la carpeta  FastAPI_Wines/despliegue_FastAPI/uploads/ y cargar a la API.
 
