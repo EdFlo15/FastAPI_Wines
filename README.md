@@ -43,3 +43,6 @@ uvicorn main:app --reload
 http://localhost:8000/docs
 
 ```
+
+5. Descargar el archivo de pruebas de la carpeta uploads y cargar a la API
+
