@@ -46,4 +46,5 @@ http://localhost:8000/docs
 
 # Screenshot
 
-![image](https://github.com/EdFlo15/FastAPI_Wines/tree/main/despliegue_FastAPI/img/img1.png)
+![image]
+(https://github.com/EdFlo15/FastAPI_Wines/tree/main/despliegue_FastAPI/img/img1.png)
