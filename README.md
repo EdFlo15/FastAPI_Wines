@@ -7,16 +7,15 @@ https://archive.ics.uci.edu/ml/datasets/Wine
 
 # Ejecución del proyecto en Google Colab
 
-Ejecuta el proyecto en google colab para realizar el analisis descriptivo, modelado y guardado de modelo.
-
+Todo el proceso de análisis descriptivo, procesamiento y modelado se puede realizar en Google Colab abriendo el archvio Colab_wines.ipynb >> open in colab, en donde se genera el modelo para despliegue.
 
 # Despliegue de modelo en FastAPI
 
-1. situarse en la carpeta despliegue_FastAPI
+1. Situarse en la carpeta despliegue_FastAPI
 ```sh
 cd despliegue_FastAPI
 ```
-2. Crear dentro de la carpeta despliegue_FastAPI el ambiente virtual con las version 3.8.10 de python y activarlo.
+2. Crear dentro de la carpeta despliegue_FastAPI el ambiente virtual con la version 3.8.10 de python y activarlo.
 
 En Windows ejecutar y activar:
 ```sh
@@ -38,11 +37,10 @@ pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 
-5. Probar la palicación en local por el puerto 8000
+5. Probar la aplicación en local por el puerto 8000
 ```sh
 http://localhost:8000/docs
 
 ```
-
-5. Descargar el archivo de pruebas de la carpeta uploads y cargar a la API
+5. Descargar el archivo de pruebas de la carpeta  FastAPI_Wines/despliegue_FastAPI/uploads/ y cargar a la API.
 
