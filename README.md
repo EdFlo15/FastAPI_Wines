@@ -1,52 +1,57 @@
-# Informacion de los datos
+# Data Set Information
 
-Data Set Information:
+These data are the results of a chemical analysis of wines grown in the same region in Italy but derived from three different cultivars. The analysis determined the quantities of 13 constituents found in each of the three types of wines.
 
 The attributes are (dontated by Riccardo Leardi, riclea '@' anchem.unige.it ) 1) Alcohol 2) Malic acid 3) Ash 4) Alcalinity of ash 5) Magnesium 6) Total phenols 7) Flavanoids 8) Nonflavanoid phenols 9) Proanthocyanins 10) Color intensity 11) Hue 12) OD280/OD315 of diluted wines 13) Proline.
 https://archive.ics.uci.edu/ml/datasets/Wine
 
-# Ejecución del proyecto en Google Colab
+# Execution in Google Colab
 
-Todo el proceso de análisis descriptivo, procesamiento y modelado se puede realizar en Google Colab abriendo el archvio Colab_wines.ipynb >> open in colab, en donde se genera el modelo para despliegue.
+All the process of descriptive analysis, preprocessing, and modeling is done in Google Colab. Open the file Colab_wines.ipynb and then click in the button "Open in Colab" for see all the analyses.
 
-# Despliegue de modelo en FastAPI
+# Deploy the model with FastAPI
 
-1. Clonar el repositorio: 
+this project was execute with version 3.8.10 of python 
+
+1. Clone the repository follow the command: 
 
 ```sh
 git clone https://github.com/EdFlo15/FastAPI_Wines.git
 ```
 
-2. Situarse en la carpeta despliegue_FastAPI
+2. Go to the directory "despliegue_FastAPI"
 ```sh
 cd despliegue_FastAPI
 ```
-3. Crear dentro de la carpeta despliegue_FastAPI el ambiente virtual con la version 3.8.10 de python y activarlo.
+3. Create inside of despliegue_FastAPI the virtual enviroment with the version 3.8.10 of python and then activate the environment following the command:
 
-En Windows ejecutar y activar:
+On Windows create the virtual enviroment and then activate the environment:
 ```sh
 python -m virtualenv -p="path\Python\Python3.8.10\python.exe" venv
 .\venv\Scripts\activate
 
 ```
-En linux ejecutar y activar:
+On Linux, create and activate the environment:
 ```sh
 python3 -m venv venv
-source bin/activate
+source venv/bin/activate
 ```
-4. Instalar las librerias necesarias
+4. Install the libraries with teh command:
 ```sh
 pip install -r requirements.txt
 ```
-5. Lanzar la aplicación: 
+5. Launch the aplication locally with the command:
 ```sh
 uvicorn main:app --reload
 ```
 
-6. Probar la aplicación en local por el puerto 8000
+6. Test the aplication locally on the port 8000
 ```sh
 http://localhost:8000/docs
 
 ```
-7. Descargar el archivo de pruebas de la carpeta  FastAPI_Wines/despliegue_FastAPI/uploads/ y cargar a la API.
+7. Download the test file. You cand find the file in FastAPI_Wines/despliegue_FastAPI/uploads/ and then load in the aplication.
+
+If the file not have the same number of columns the aplication will launch the exeption.
+
 
